@@ -327,6 +327,127 @@ main .container .left button:hover {
   background-color: #0f1250; /* Darker shade on hover */
 }
 
+/* CTA Section */
+.cta {
+  background: var(--white);
+  padding: 80px 0;
+}
+.cta .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 40px;
+  padding: 0 20px;
+}
+.cta .container h1 {
+  font-size: 80px;
+  max-width: 700px;
+  text-align: center;
+  color: var(--blue);
+}
+.cta .container p {
+  font-size: 28px;
+  font-family: 'Gilroy-Medium', sans-serif;
+  text-align: center;
+}
+
+/* Footer */
+footer {
+  background: #000;
+}
+footer .container {
+  padding: 0 20px;
+}
+footer .container .main-row {
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  padding-bottom: 80px;
+}
+footer .container .main-row .left .list-wrapper {
+  display: flex;
+  gap: 75px;
+}
+footer .container .main-row .left .list-wrapper ul h2 {
+  color: var(--white);
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+footer .container .main-row .left .list-wrapper ul li {
+  margin: 10px 0;
+}
+footer .container .main-row .left .list-wrapper ul li a {
+  color: var(--white);
+  font-family: 'Gilroy-Regular', sans-serif;
+  transition: all .3s ease;
+}
+footer .container .main-row .left .list-wrapper ul li a:hover {
+  color: var(--green);
+}
+footer .container .main-row .right {
+  max-width: 408px;
+}
+footer .container .main-row .right h2 {
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+footer .container .main-row .right p {
+  font-family: 'Gilroy-Medium', sans-serif;
+  margin-bottom: 20px;
+}
+footer .container .main-row .right .inputs input {
+  padding: 15px 30px 15px 5px;
+  background: none;
+  border: none;
+  outline: none;
+  color: var(--white);
+  font-size: 20px;
+  font-family: 'Gilroy-Medium', sans-serif;
+}
+footer .container .main-row .right .inputs {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--white);
+  padding-bottom: 5px;
+}
+footer .container .main-row .right .inputs i {
+  padding: 5px;
+  color: var(--white);
+  background: var(--green);
+  border-radius: 50%;
+  font-size: 20px;
+  cursor: pointer;
+}
+footer .container .main-row .right .inputs input::placeholder {
+  color: var(--white);
+  font-size: 18px;
+  font-family: 'Gilroy-Medium', sans-serif;
+}
+footer .container .copyright p {
+  color: var(--white);
+  font-family: 'Gilroy-Medium', sans-serif;
+}
+footer .container .copyright .socials {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+footer .container .copyright .socials i {
+  color: var(--white);
+  font-size: 30px;
+  cursor: pointer;
+  transition: all .3s ease;
+}
+footer .container .copyright .socials i:hover {
+  color: var(--green);
+}
+footer .container .copyright {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
 /* Responsive Design */
 @media (max-width: 1300px) {
   main .container .wrapper {
@@ -349,6 +470,18 @@ main .container .left button:hover {
     justify-content: center;
     align-items: center;
     margin-top: 20px;
+  }
+}
+
+@media (max-width: 1024px) {
+  footer .container .main-row {
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 30px;
+  }
+  footer .container .main-row .list-wrapper {
+    flex-direction: column;
+    gap: 10px;
   }
 }
 
@@ -440,6 +573,16 @@ main .container .left button:hover {
   .article .carousel div h3 {
     font-size: 18px;
   }
+  .cta .container h1 {
+    font-size: 42px;
+  }
+  .cta .container p {
+    font-size: 20px;
+  }
+  footer .container .copyright {
+    flex-direction: column;
+    gap: 30px;
+  }
 }
 @media (max-width: 350px) {
   .app .container .wrapper {
@@ -447,5 +590,17 @@ main .container .left button:hover {
   }
   .testimonial .container .wrapper {
     padding: 0 10px;
+  }
+  .cta .container {
+    padding: 0 10px;
+  }
+  footer .container .main-row .right .inputs i{
+    display: none;
+  }
+  footer .container {
+    padding: 0 10px;
+  }
+  footer .container .inputs {
+    max-width: 200px;
   }
 }
