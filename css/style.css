@@ -243,7 +243,7 @@ main .container .left button:hover {
 .testimonial .container .wrapper .left p {
   font-size: 21px;
   color: var(--blue);
-  font-family: 'GIlroy-Medium', sans-serif;
+  font-family: "GIlroy-Medium", sans-serif;
   max-width: 588px;
   margin-bottom: 32px;
 }
@@ -259,12 +259,72 @@ main .container .left button:hover {
   font-size: 21px;
   margin-bottom: 5px;
 }
-.testimonial .container .wrapper .left .review .reviewer-info ul p{
+.testimonial .container .wrapper .left .review .reviewer-info ul p {
   color: #a5a5a5;
   margin-left: 30px;
 }
 .testimonial .container .wrapper .right img {
   max-width: 100%;
+}
+
+/* Article Section */
+.article {
+  background: var(--blue);
+}
+.article .container {
+  padding: 0 20px;
+}
+.article .container h1 {
+  font-size: 80px;
+  color: var(--white);
+  margin-bottom: 30px;
+  max-width: 816px;
+}
+.carousel {
+  width: 100%;
+  margin: auto;
+}
+.carousel div h3 {
+  color: var(--white);
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+.carousel div h2 {
+  font-size: 40px;
+  color: var(--white);
+}
+/* Adds gap between the carousel images */
+.carousel .slick-slide {
+  margin: 0 20px; /* Horizontal margin for spacing */
+}
+.carousel img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+/* Remove extra margin on the last and first images */
+.slick-list {
+  margin: 0 -10px; /* To offset the gap on the edges */
+}
+/* Custom Arrow Styles */
+/* Position the arrows outside the carousel */
+.slick-prev {
+  left: -60px;
+}
+.slick-next {
+  right: -60px;
+}
+
+/* Remove default text for arrows */
+.slick-prev:before,
+.slick-next:before {
+  content: ""; /* Removes default "next" and "previous" */
+}
+
+/* Adjust arrow styles on hover */
+.slick-prev:hover,
+.slick-next:hover {
+  background-color: #0f1250; /* Darker shade on hover */
 }
 
 /* Responsive Design */
@@ -284,6 +344,11 @@ main .container .left button:hover {
   }
   .testimonial .container .wrapper {
     flex-direction: column;
+  }
+  .testimonial .container .lm {
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
   }
 }
 
@@ -364,6 +429,15 @@ main .container .left button:hover {
   }
   .testimonial .container .wrapper .left p,
   .testimonial .container .wrapper .left ul li {
+    font-size: 18px;
+  }
+  .article .container h1 {
+    font-size: 42px;
+  }
+  .article .carousel div h2 {
+    font-size: 30px;
+  }
+  .article .carousel div h3 {
     font-size: 18px;
   }
 }
