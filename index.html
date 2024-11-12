@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Healthy - Medical Care for Everyone</title>
     <link rel="stylesheet" href="css/style.css" />
+    <!-- Slick Slider CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" />
     <!-- Font Awesome CDN -->
     <link
       rel="stylesheet"
@@ -134,9 +137,16 @@
         <div class="wrapper">
           <div class="left">
             <h1>Your health is our number one highest priority</h1>
-            <p>Everyone deserve a better treatment for their health care, including you and that is our main priority</p>
+            <p>
+              Everyone deserve a better treatment for their health care,
+              including you and that is our main priority
+            </p>
             <div class="review">
-              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer .</p>
+              <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy
+                text ever since the 1500s, when an unknown printer .
+              </p>
               <div class="reviewer-info">
                 <ul>
                   <li>Thomas Frank Anthony</li>
@@ -146,16 +156,81 @@
             </div>
           </div>
           <div class="right">
-            <img src="img/person.png" alt="">
+            <img src="img/person.png" alt="" />
           </div>
         </div>
         <div class="lm">
           <p>Learn More</p>
-          <img src="img/arrow-icon.png" alt="">
+          <img src="img/arrow-icon.png" alt="" />
         </div>
       </div>
     </section>
 
-    <script src="js/main.js"></script>
+    <section class="article">
+      <div class="container">
+        <h1>Daily curated article for your healthcare</h1>
+        <div class="carousel">
+          <div>
+            <img src="img/article-1.png" alt="">
+            <h3>WELLNESS - JAN 24, 2020</h3>
+            <h2>Can meditation banish back pain?</h2>
+          </div>
+          <div>
+            <img src="img/article-2.png" alt="">
+            <h3>WELLNESS - JAN 24, 2020</h3>
+            <h2>The latest on exercise and sleep</h2>
+          </div>
+          <div>
+            <img src="img/article-1.png" alt="">
+            <h3>WELLNESS - JAN 24, 2020</h3>
+            <h2>Can meditation banish back pain?</h2>
+          </div>
+          <div>
+            <img src="img/article-2.png" alt="">
+            <h3>WELLNESS - JAN 24, 2020</h3>
+            <h2>The latest on exercise and sleep</h2>
+          </div>
+          <div>
+            <img src="img/article-1.png" alt="">
+            <h3>WELLNESS - JAN 24, 2020</h3>
+            <h2>Can meditation banish back pain?</h2>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- jQuery Library -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Slick Slider JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script>
+      // Initialize Slick Slider
+      $(document).ready(function () {
+        $(".carousel").slick({
+          infinite: true,
+          slidesToShow: 2.5, // Shows 2.5 slides at a time
+          slidesToScroll: 1,
+          autoplay: false,
+          dots: false,
+          arrows: true,
+          autoplay: true,
+          responsive: [
+            {
+              breakpoint: 950, // tablet breakpoint
+              settings: {
+                slidesToShow: 1.5,
+                arrows: false
+              },
+            },
+            {
+              breakpoint: 480, // mobile breakpoint
+              settings: {
+                slidesToShow: 1,
+              },
+            },
+          ],
+        });
+      });
+    </script>
   </body>
 </html>
