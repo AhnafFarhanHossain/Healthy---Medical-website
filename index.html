@@ -166,6 +166,7 @@
       </div>
     </section>
 
+    <!-- Article Section -->
     <section class="article">
       <div class="container">
         <h1>Daily curated article for your healthcare</h1>
@@ -199,6 +200,63 @@
       </div>
     </section>
 
+    <!-- CTA Section -->
+    <section class="cta">
+      <div class="container">
+        <h1>Get your own personalized plans</h1>
+        <p>Start consulting with us about health condition for free</p>
+        <button>Try for Free <i class="ri-arrow-right-line"></i></button>
+      </div>
+    </section>
+
+    <!-- Footer -->
+     <footer>
+      <div class="container">
+        <div class="main-row">
+          <div class="left">
+            <div class="list-wrapper">
+              <ul>
+                <h2>COMPANY</h2>
+                <li><a href="#">Press</a></li>
+                <li><a href="#">Our Company</a></li>
+                <li><a href="#">Affiliate</a></li>
+                <li><a href="#">Careers</a></li>
+              </ul>
+              <ul>
+                <h2>HELP</h2>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">Contact us</a></li>
+                <li><a href="#">Pricing</a></li>
+              </ul>
+              <ul>
+                <h2>LEGAL</h2>
+                <li><a href="#">Terms of Service</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">TrafoHealth PDA</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="right">
+            <h2>KEEP UP WITH US</h2>
+            <p>Stay up to date by reading our high quality article and personalized for you</p>
+            <div class="inputs">
+              <input type="email" placeholder="Write your email">
+              <i class="ri-arrow-right-line"></i>
+            </div>
+          </div>
+        </div>
+        <div class="copyright">
+          <p>&copy; 2020 TrafoHealth. All Rights Reserved (Built by Ahnaf Farhan)</p>
+          <div class="socials">
+            <i class="ri-instagram-line"></i>
+            <i class="ri-linkedin-fill"></i>
+            <i class="ri-twitter-fill"></i>
+            <i class="ri-facebook-circle-fill"></i>
+          </div>
+        </div>
+      </div>
+     </footer>
+
     <!-- jQuery Library -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <!-- Slick Slider JS -->
@@ -226,8 +284,15 @@
               breakpoint: 480, // mobile breakpoint
               settings: {
                 slidesToShow: 1,
+                arrows: false
               },
             },
+            {
+              breakpoint: 300,
+              settings: {
+                arrows: false
+              }
+            }
           ],
         });
       });
